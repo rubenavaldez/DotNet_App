@@ -1,0 +1,8 @@
+C:\Code\DotNet_App\Number_Guesser\bin\Debug\Number_Guesser.exe.config
+C:\Code\DotNet_App\Number_Guesser\bin\Debug\Number_Guesser.exe
+C:\Code\DotNet_App\Number_Guesser\bin\Debug\Number_Guesser.pdb
+C:\Code\DotNet_App\Number_Guesser\obj\Debug\Number_Guesser.csproj.AssemblyReference.cache
+C:\Code\DotNet_App\Number_Guesser\obj\Debug\Number_Guesser.csproj.SuggestedBindingRedirects.cache
+C:\Code\DotNet_App\Number_Guesser\obj\Debug\Number_Guesser.csproj.CoreCompileInputs.cache
+C:\Code\DotNet_App\Number_Guesser\obj\Debug\Number_Guesser.exe
+C:\Code\DotNet_App\Number_Guesser\obj\Debug\Number_Guesser.pdb
