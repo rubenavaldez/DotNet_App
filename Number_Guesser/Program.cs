@@ -33,9 +33,9 @@ namespace Number_Guesser
             Console.WriteLine("What is your name");
 
             //Get user input
-            string input = Console.ReadLine();
+            string inputName = Console.ReadLine();
 
-            Console.WriteLine("Hello {0}, I'd like to play a game", input);
+            Console.WriteLine("Hello {0}, I'd like to play a game", inputName);
 
             //Set correct number
             int correctNumber = 7;
@@ -48,10 +48,51 @@ namespace Number_Guesser
 
             //while guess is not correct
             while (guess != correctNumber) { 
-            
-                guess = Console.ReadLine();
+                //get user input
+                string input = Console.ReadLine();
+
+                //make sure it's a number
+                if (!int.TryParse(input, out guess)) {
+                    //Change text color 
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    //Tell User it's not a number
+                    Console.WriteLine("Please enter an actual number");
+
+                    //Reset text color
+                    Console.ResetColor();
+
+                    continue;
+                }
+
+
+                //Cast to interger and save in guess variable 
+                guess = Int32.Parse(input);
+
+                //match guess to correct number
+
+                if(guess != correctNumber){
+                    //Change text color 
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    //Tell User it's the wrong number
+                    Console.WriteLine("Wrong number, please try again");
+
+                    //Reset text color
+                    Console.ResetColor();
+
+                }
             }
-    
+
+
+            //Change text color 
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            //Tell User it's the right number 
+            Console.WriteLine("You are correct! Great Job");
+
+            //Reset text color
+            Console.ResetColor();
 
 
 
