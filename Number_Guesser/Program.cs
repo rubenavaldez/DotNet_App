@@ -38,7 +38,12 @@ namespace Number_Guesser
             Console.WriteLine("Hello {0}, I'd like to play a game", inputName);
 
             //Set correct number
-            int correctNumber = 7;
+            //int correctNumber = 7;
+
+            //Create a random number 
+            Random random = new Random();
+
+            int correctNumber = random.Next(1,10);
 
             //init guess var
             int guess = 0;
