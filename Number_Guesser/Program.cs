@@ -87,7 +87,7 @@ namespace Number_Guesser
 
                 //Print success message 
 
-                PrintColorMessage(ConsoleColor.Yellow, "You are correct! Great Job");
+                PrintColorMessage(ConsoleColor.Yellow, "You are correct! Great Job!");
                 // Ask to play again
                 Console.WriteLine("Play Again? [Y or N]");
 
@@ -147,7 +147,7 @@ namespace Number_Guesser
             Console.ForegroundColor = color;
 
             //Tell User it's not a number
-            Console.WriteLine("message");
+            Console.WriteLine(message);
 
             //Reset text color
             Console.ResetColor();
