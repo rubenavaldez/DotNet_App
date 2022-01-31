@@ -40,6 +40,9 @@ namespace Number_Guesser
             //Set correct number
             //int correctNumber = 7;
 
+            //Create an on-going loop
+            while (true){
+
             //Create a random number 
             Random random = new Random();
 
@@ -99,7 +102,25 @@ namespace Number_Guesser
             //Reset text color
             Console.ResetColor();
 
+            // Ask to play again
+            Console.WriteLine("Play Again? [Y or N]");
 
+            // Get Answer
+            string answer = Console.ReadLine().ToUpper();
+
+                if (answer == "Y")
+                {
+                    continue;
+                }
+                else if (answer == "N")
+                {
+                    return;
+                }
+                else {
+                    return;
+                    
+                }
+            }
 
         }
     }
