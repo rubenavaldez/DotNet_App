@@ -16,18 +16,8 @@ namespace Number_Guesser
             //Console.WriteLine("hello and " + name + " you are " +age+ " years old");
             //Console.WriteLine("{0} you are {1}", name, age);
 
-            string appName = "Number Guesser";
-            string appVersion = "1.0.0";
-            string appAuthor = "Ruben Valdez";
-
-            //Change text color 
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            //Write out app info
-            Console.WriteLine("{0} version {1} by {2}", appName, appVersion, appAuthor);
-
-            //Reset text color
-            Console.ResetColor();
+            //Run get app info function 
+            GetAppInfo();
 
             // Ask user's name 
             Console.WriteLine("What is your name");
@@ -121,6 +111,24 @@ namespace Number_Guesser
                     
                 }
             }
+
+        } // end while loop
+
+
+        static void GetAppInfo() {
+            //set app info
+            string appName = "Number Guesser";
+            string appVersion = "1.0.0";
+            string appAuthor = "Ruben Valdez";
+
+            //Change text color 
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            //Write out app info
+            Console.WriteLine("{0} version {1} by {2}", appName, appVersion, appAuthor);
+
+            //Reset text color
+            Console.ResetColor();
 
         }
     }
